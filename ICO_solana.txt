@@ -1,0 +1,27 @@
+Creating Token on solana devnet using WSL on windows using Ubuntu
+
+
+first install solana from : https://solana.com/developers/guides/getstarted/setup-local-development 
+
+resolve errors after completely installed successfully then only move forward for creating public key
+
+public key : solana-keygen new
+
+commands are as follows : 
+
+creating token :  spl-token create-token --url devnet
+
+create account : spl-token create-account  9ADYrMhy3RJ3VncspuCeFkawr8bajWXm7hMSiRLKi9Mz --url devnet
+
+checking balance : spl-token balance  9ADYrMhy3RJ3VncspuCeFkawr8bajWXm7hMSiRLKi9Mz --url devnet
+
+mint Token : spl-token mint  9ADYrMhy3RJ3VncspuCeFkawr8bajWXm7hMSiRLKi9Mz 100 --url devnet
+
+check balance : spl-token balance  9ADYrMhy3RJ3VncspuCeFkawr8bajWXm7hMSiRLKi9Mz --url devnet
+
+burn token : spl-token burn   2Nn5NaV7sHZ3tLmCEZWiVJ1TLEeX3ALua3vPdU6kz8s3  10 --url devnet
+
+
+
+
+
